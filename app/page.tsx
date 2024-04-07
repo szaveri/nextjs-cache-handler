@@ -4,11 +4,9 @@ import Basic from './components/Basic'
 const getData = async () => {
   const res = await fetch('https://reqres.in/api/users?page=1', {
     method: 'GET',
-    headers: {
-      'Content-Type': 'application/json',
-    },
     next: {
-      tags: ['test']
+      tags: ['test'],
+      revalidate: 3600,
     }
   });
   
