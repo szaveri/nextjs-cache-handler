@@ -21,5 +21,4 @@ $ pnpm run dev
 
 ## TODO
 
-* Add Full Route Caching
 * Test client Route Caching via `next/link`
